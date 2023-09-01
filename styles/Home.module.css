@@ -1,0 +1,15 @@
+
+button{
+  line-height: normal;
+  outline: none;
+}
+
+@media (prefers-color-scheme: white) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+}

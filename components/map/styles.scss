@@ -1,0 +1,25 @@
+
+  .see-btn {
+    // color: #121;
+    font-family: "Montserrat";
+    font-size: 14px;
+    font-weight: 500;
+    border-color: #8dd3bb !important;
+    &:hover{
+      background: #8dd3bb;
+      transition: .3s ease-in;
+    }
+    @include sm{
+        display: block;
+        margin-bottom: 10px;
+        width: 100%!important;
+        box-shadow: none!important;
+    }
+  }
+  .component-photo{
+    width: 100%;
+    object-fit: cover;
+    @include md{
+        object-fit: contain;
+    }
+  }

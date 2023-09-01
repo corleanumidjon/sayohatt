@@ -1,0 +1,60 @@
+.filter{
+    .ant-slider-rail{
+        height: 2px!important;
+    }
+    .ant-slider:hover{
+        .ant-slider-track{
+            
+            background:  #121;
+        }
+    }
+    .ant-slider-track{
+        height: 2px;
+        background: #121;
+
+    }
+    .ant-slider-handle{
+        &::after{
+            background: #8DD3BB!important;
+            box-shadow: 0 0 0 2px #8DD3BB!important;
+            inset-block-start: -1px;
+        }
+
+       
+    }
+   
+}
+.race-card{
+ 
+    .card-img{
+        @include lg{
+            width: 100%;
+        }
+    }
+    .price-line{
+        width: 80%;
+        @include md{
+            width: 100%;
+        }
+        &::after{
+
+            width: 0;
+            content: "";
+            height: 4px;
+            border-collapse: separate;
+            background: #aff9df96;
+            position:absolute;
+            bottom: 0;
+            left: 0;
+            transition: .5s ease-in-out;
+            
+        }
+        &:hover::after{
+            width: 80%;
+            @include md{
+                width: 100%;
+            }
+        }
+    }
+ 
+}
